@@ -2,11 +2,14 @@
 
 * {
     font-family: sans-serif;
+    margin: 0;
 }
 
 /* Navbar */
 
-
+.logo {
+    max-width: 20%;
+}
 
 nav {
     background-color: black;
@@ -23,6 +26,13 @@ body {
     background-color: white;
 }
 
+.landing-page {
+    /*Figure out why on earth this isn't working */
+    background-image: url("../img/background-mobile.jpg");
+    width: 50%;
+    height: 50%;
+}
+
 /* Product Page */
 
 /* Contact Us Page */
@@ -30,4 +40,10 @@ body {
 form {
     background-color: hotpink;
     width: 25%;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
 }
