@@ -1,46 +1,52 @@
 /* Everything */
 
 * {
-    font-family: sans-serif;
-    margin: 0;
+    box-sizing: border-box;
+    
 }
 
-/* Navbar */
-
-.logo {
-    max-width: 20%;
+body {
+    background-color: #F3F4F5;
 }
 
-nav {
+/* Topnav */
+
+header {
     background-color: black;
 }
 
-nav li ul a {
+.logo {
+    width: 15%;
+    max-width: 100px;
+    min-width: 65px;
+}
+
+.nav-link {
+    text-decoration: none;
+    list-style-type: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-/* Home Page */
+/* Front Page */
 
-body {
-    background-color: white;
+h1 {
+    color: black;
+    font-size: 3rem;
 }
 
-.landing-page {
-    /*Figure out why on earth this isn't working */
-    background-image: url("../img/background-mobile.jpg");
-    width: 50%;
-    height: 50%;
+.landing-button {
+    border: 0.4em red solid;
+    background: black;
+    color: white;
+    font-size: 1.3rem;
+    padding: 2% 5%;
+    
 }
 
 /* Product Page */
 
-/* Contact Us Page */
-
-form {
-    background-color: hotpink;
-    width: 25%;
-}
+/* Contact Us */
 
 /* Footer */
 

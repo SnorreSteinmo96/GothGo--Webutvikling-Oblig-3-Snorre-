@@ -1,57 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GothGo Home Page</title>
+        <title>GothGo Front Page</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <img src="img/logo mobile.jpg" alt="GothGo Logo" class="logo">
-                <li>
-                    <ul><a href="productpage.html" target="_blank">Sales</a></ul>
-                    <ul><a href="contactus.html" target="_blank">Contact Us</a></ul>
-                </li>
+            <nav class="top-nav">
+                <a href="index.html">
+                    <img src="img/logo mobile.jpg" alt="Logo" class="logo">
+                </a>
+                <ul>
+                    <a href="index.html" class="nav-link">
+                        <li>Home</li>
+                    </a>
+                    <a href="productpage.html" class="nav-link">
+                        <li>Shop</li>
+                    </a>
+                    <a href="contactus.html" class="nav-link">
+                        <li>Contact Us</li>
+                    </a>
+                </ul>
             </nav>
         </header>
         <main>
-            <section class="landing-page">
-                <!-- Change this to a picture tag? -->
-                <h3>Shaker-48</h3>
-                <button class="buy-now">Buy Now</button>
+            <section class="landing">
+                <!-- Snakket litt med ChatGPT her, ang <picture> taggen -->
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="img/background.jpg" class="front-page-img">
+                    <img src="img/background-mobile.jpg" alt="A woman showing off her shoes" class="front-page-img">
+                </picture>
+                <!-- Her stopper det -->
+                <h1>GothGo</h1>
+                <a href="productpage.html" target="_blank">
+                    <button class="landing-button">Shop Now</button>
+                </a> 
             </section>
-            <section class="news">
+            <section class="breadcrumb-trail">
                 <h2>News</h2>
-                <hr>
+            </section>
+            <hr>
+            <section class="news-product">
                 <article>
-                    <img src="#" alt="Shaker-48">
-                    <h3>Shaker-48</h3>
-                    <p>1250,00kr</p>
-                    <button>Shop</button>
+                    <img src="img/Shaker-48.jpg" alt="A picture of Shaker-48 shoes">
+                    <h3>Shaker-48</h3> 
+                    <p>1,250,00 kr</p>
+                    <a href="productpage.html" target="_blank">
+                        <button>Shop</button>
+                    </a>
                 </article>
             </section>
-            <section class="bestseller">
-                <h2>Bestseller</h2>
-                <hr>
+            <section class="breadcrumb-trail">
+                <h2>Bestsellers</h2>
+            </section>
+            <hr>
+            <section class="bestseller-product">
                 <article>
-                    <img src="#" alt="Eldritch-482">
-                    <h3>Eldritch-482</h3>
-                    <p>1250,00kr</p>
-                    <button>Shop</button>
+                    <img src="img/eldritch-482.jpg" alt="A picture of Eldritch-482 shoes">
+                    <h3>Eldritch-482</h3> 
+                    <p>1,400,00 kr</p>
+                    <a href="productpage.html" target="_blank">   
+                        <button>Shop</button>
+                    </a>
                 </article>
             </section>
         </main>
         <footer>
-            <nav>
-                <img src="img/logo mobile.jpg" alt="GothGo Logo" class="logo">
-                <hr>
-                <li>
-                    <ul><a href="productpage.html" target="_blank">Sales</a></ul>
-                    <ul><a href="contactus.html" target="_blank">Contact Us</a></ul>
-                </li>
-                <hr>
+            <a href="index.html">
+                <img src="img/logo mobile.jpg" alt="Logo" class="logo">
+            </a>
+            <nav class="bottom-nav">
+                <ul>
+                    <a href="#">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#">
+                        <li>Returns</li>
+                    </a>
+                    <a href="#">
+                        <li>Size Chart</li>
+                    </a>
+                    <a href="#">
+                        <li>Gift Cards</li>
+                    </a>
+                </ul>
             </nav>
             <p>2023 GothGo All Rights Reserved</p>
         </footer>
