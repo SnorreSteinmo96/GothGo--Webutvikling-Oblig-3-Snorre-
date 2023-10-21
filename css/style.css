@@ -56,6 +56,14 @@ header nav ul li a {
     list-style-type: none;
 }
 
+.hamburger-menu-icon {
+    color: white;
+}
+
+.top-navbar {
+    display: hidden;
+}
+
 .logo {
     height: 60px;
     max-width: 100%;
@@ -235,6 +243,36 @@ form {
 
 /* Media Queries for Desktop */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header header header" 
+        "main main main" 
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .shaker-48-img, .eldritch-482-img {
+        width: 30%;
+    }
+
+    .shaker-flex-container, .eldritch-flex-container {
+        display: flex;
+        justify-content: center;
+    }
 }
