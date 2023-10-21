@@ -90,4 +90,52 @@ hr {
 
 footer {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul li {
+    padding: 2rem;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer-p {
+    color: white;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.shaker-48-img, .eldritch-482-img {
+    width: 40%;
+}
+
+.shop-button {
+    border: 0.4em black solid;
+    background: black;
+    color: white;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.landing, .news-product, .bestseller-product {
+    margin-bottom: 2rem;
 }
