@@ -139,3 +139,102 @@ h3 {
 .landing, .news-product, .bestseller-product {
     margin-bottom: 2rem;
 }
+
+.product-price {
+    margin-top: -0.5rem;
+    font-size: 1.3rem;
+}
+
+.size-8, .color-black-text {
+    font-size: 1.1rem;
+}
+
+.size-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.size {
+  background-color: black;
+  color: white; 
+  font-size: 1.3rem; 
+}
+
+.color-button {
+    border: 0.4em black solid;
+    background: black;
+    color: white;
+    font-size: 1rem;
+}
+
+.color-button-container {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.add-to-cart {
+    border: 0.4em black solid;
+    background: black;
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.add-to-wishlist {
+    border: 0.1em grey solid;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 10px;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+.size-chart-button {
+    border: 0.4em black solid;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Contact Us Page */
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+#submit {
+    border: 0.4em black solid;
+    background: black;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1.6rem;
+}
+
+
+/* Media Queries for Desktop */
+
+@media screen and (min-width: 600px) {
+    
+}
