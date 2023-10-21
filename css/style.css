@@ -1,54 +1,92 @@
-/* Everything */
-
 * {
     box-sizing: border-box;
-    
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 body {
-    background-color: #F3F4F5;
+    margin: 0;
+    padding: 0;
+    }
+
+/* Gikk gjennom forelesningen og snakket litt med ChatGPT her */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
-/* Topnav */
+/* Her stopper det */
 
 header {
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    max-width: 100%;
+
+}
+
+header nav {
+    width: 100%;
+    padding-right: 5%;
+    max-width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    max-width: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
 }
 
 .logo {
-    width: 15%;
-    max-width: 100px;
-    min-width: 65px;
+    height: 60px;
+    max-width: 100%;
 }
 
-.nav-link {
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    font-size: 1.3rem;
+.front-page-img {
+    max-width: 100%;
 }
 
-/* Front Page */
-
-h1 {
-    color: black;
-    font-size: 3rem;
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .landing-button {
-    border: 0.4em red solid;
+    border: 0.4em black solid;
     background: black;
     color: white;
     font-size: 1.3rem;
-    padding: 2% 5%;
-    
 }
 
-/* Product Page */
+.breadcrumb-trail {
+    display: flex;
+    justify-content: center;
+}
 
-/* Contact Us */
-
-/* Footer */
+hr {
+    margin: 1rem;
+}
 
 footer {
     background-color: black;
