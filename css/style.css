@@ -230,6 +230,8 @@ form {
     justify-content: center;
     flex-direction: column; 
     gap: 1rem;
+    background-color: black;
+    padding: 20%;
 }
 
 #submit {
