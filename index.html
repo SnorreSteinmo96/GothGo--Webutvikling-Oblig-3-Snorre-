@@ -6,15 +6,17 @@
         <title>GothGo Front Page</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <script src="https://kit.fontawesome.com/d87bed586a.js" crossorigin="anonymous"></script>
+        <!-- Jeg tok normalize.css stylesheetet rett fra forelesninga om Flex/Grid -->
     </head>
     <body>
         <div class="grid-container">
             <header>
                 <a href="index.html">
-                    <img src="img/logo mobile.jpg" alt="Logo" class="logo">
+                    <img src="img/logo-mobile.jpg" alt="Logo" class="logo">
+                    <!-- Bildet i logoen er lasted ned fra Depositphotos: https://depositphotos.com/vector/smiling-young-witch-wearing-typical-witch-hat-397708736.html -->
+                    <!-- Logoen er laget i Pixlr: https://pixlr.com/-->
                 </a>
-                <nav>      
+                <nav>     
                     <ul>  
                         <li><a href="index.html">Home</a></li>
                         <li><a href="productpage.html">Shop</a></li>
@@ -24,16 +26,15 @@
             </header>
             <main>
                 <section class="landing">
-                    <!-- Snakket litt med ChatGPT her, ang <picture> taggen -->
                     <picture>
                         <source media="(min-width: 1024px)" srcset="img/background.jpg" class="front-page-img">
+                        <!-- Snakket litt med ChatGPT her, ang <picture> taggen. Jeg skrev det selv først, men ting fungerte ikke, så jeg kopierte koden over. Jeg hadde glømt .jpg bak img/background -->
                         <img src="img/background-mobile.jpg" alt="A woman showing off her shoes" class="front-page-img">
                     </picture>
-                    <!-- Her stopper det -->
-                    <h1>GothGo</h1>
-                    <a href="productpage.html" target="_blank">
+                    <section class="h1-shopnow">
+                        <h1>GothGo</h1>
                         <button class="landing-button">Shop Now</button>
-                    </a> 
+                    </section> 
                 </section>
                 <hr>
                 <section class="breadcrumb-trail">
@@ -44,11 +45,10 @@
                     <section class="news-product">
                         <article>
                             <img src="img/Shaker-48.jpg" alt="A picture of Shaker-48 shoes" class="shaker-48-img">
+                            <!-- Bildet er lånt fra Amazon, så komprimert: https://www.amazon.com/DREAM-PAIRS-Chunky-Platform-Sdkb221w/dp/B09Y94Q9WL/ref=pd_ybh_a_sccl_12/141-8176283-6515123?pd_rd_w=eHhkf&content-id=amzn1.sym.67f8cf21-ade4-4299-b433-69e404eeecf1&pf_rd_p=67f8cf21-ade4-4299-b433-69e404eeecf1&pf_rd_r=D4FX9TGYWWTCTPNB2DSJ&pd_rd_wg=d13uB&pd_rd_r=9459aa5c-ab5c-4cd3-9e52-73b9c49caf5b&pd_rd_i=B09Y94Q9WL&psc=1 -->
                             <h3>Shaker-48</h3> 
                             <p class="price">1,250,00 kr</p>
-                            <a href="productpage.html" class="shop-button-container">
-                                <button class="shop-button">Shop</button>
-                            </a>
+                            <button class="shop-button-container">Shop</button>
                         </article>
                     </section>
                     <section class="news-product">
@@ -56,9 +56,7 @@
                             <img src="img/Shaker-48.jpg" alt="A picture of Shaker-48 shoes" class="shaker-48-img">
                             <h3>Shaker-48</h3> 
                             <p class="price">1,250,00 kr</p>
-                            <a href="productpage.html" class="shop-button-container">
-                                <button class="shop-button">Shop</button>
-                            </a>
+                            <button class="shop-button-container">Shop</button>
                         </article>
                     </section>
                     <section class="news-product">
@@ -66,9 +64,7 @@
                             <img src="img/Shaker-48.jpg" alt="A picture of Shaker-48 shoes" class="shaker-48-img">
                             <h3>Shaker-48</h3> 
                             <p class="price">1,250,00 kr</p>
-                            <a href="productpage.html" class="shop-button-container">
-                                <button class="shop-button">Shop</button>
-                            </a>
+                            <button class="shop-button-container">Shop</button>
                         </article>
                     </section>
                 </section>
@@ -81,11 +77,10 @@
                     <section class="bestseller-product">
                         <article>
                             <img src="img/eldritch-482.jpg" alt="A picture of Eldritch-482 shoes" class="eldritch-482-img">
+                            <!-- Bildet er lånt fra Amazon, så komprimert: https://www.amazon.com/AMINUGAL-Womens-Platform-Fashion-Motorcycle/dp/B0BHZCGZ4D/ref=pd_ybh_a_sccl_10/141-8176283-6515123?pd_rd_w=eHhkf&content-id=amzn1.sym.67f8cf21-ade4-4299-b433-69e404eeecf1&pf_rd_p=67f8cf21-ade4-4299-b433-69e404eeecf1&pf_rd_r=D4FX9TGYWWTCTPNB2DSJ&pd_rd_wg=d13uB&pd_rd_r=9459aa5c-ab5c-4cd3-9e52-73b9c49caf5b&pd_rd_i=B0BHZCGZ4D&psc=1 -->
                             <h3>Eldritch-482</h3> 
-                            <p class="price">1,400,00 kr</p>
-                            <a href="productpage.html" class="shop-button-container">   
-                                <button class="shop-button">Shop</button>
-                            </a>
+                            <p class="price">1,400,00 kr</p> 
+                            <button class="shop-button-container">Shop</button>
                         </article>
                     </section>
                     <section class="bestseller-product">
@@ -93,9 +88,7 @@
                             <img src="img/eldritch-482.jpg" alt="A picture of Eldritch-482 shoes" class="eldritch-482-img">
                             <h3>Eldritch-482</h3> 
                             <p class="price">1,400,00 kr</p>
-                            <a href="productpage.html" class="shop-button-container">   
-                                <button class="shop-button">Shop</button>
-                            </a>
+                            <button class="shop-button-container">Shop</button>
                         </article>
                     </section>
                     <section class="bestseller-product">
@@ -103,16 +96,14 @@
                             <img src="img/eldritch-482.jpg" alt="A picture of Eldritch-482 shoes" class="eldritch-482-img">
                             <h3>Eldritch-482</h3> 
                             <p class="price">1,400,00 kr</p>
-                            <a href="productpage.html" class="shop-button-container">   
-                                <button class="shop-button">Shop</button>
-                            </a>
+                            <button class="shop-button-container">Shop</button>
                         </article>
                     </section>
                 </section>
             </main>
             <footer>
                 <a href="index.html">
-                    <img src="img/logo mobile.jpg" alt="Logo" class="logo">
+                    <img src="img/logo-mobile.jpg" alt="Logo" class="logo">
                 </a>
                 <nav class="bottom-nav">
                     <ul>

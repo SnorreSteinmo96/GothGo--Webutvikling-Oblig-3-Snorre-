@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+/* Jeg fikk et problem med en tykk hvit margin som brått dukket opp på høyre side av skjermen på mobil.
+
+Jeg fikk den ikke bort, så jeg Googlet, og noen på Stack-Overflow hadde foreslått "overflow-x: hidden;
+
+Jeg forstår at dette gjemmer overflow til høyre.
+
+Her er linken til tråden: https://stackoverflow.com/questions/46012482/unwanted-white-space-on-right-side-in-mobile-view
+
+*/
+
 html, body {
     overflow-x: hidden;
 }
@@ -9,9 +19,9 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    }
+}
 
-/* Gikk gjennom forelesningen og snakket litt med ChatGPT her */
+/* Gikk gjennom forelesningen og snakket litt med ChatGPT her. Koden ble skrevet selv, men jeg var brått litt usikker på hvorfor man definerer grid-template-areas. */
 
 .grid-container {
     display: grid;
@@ -22,8 +32,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
 }
-
-/* Her stopper det */
 
 header {
     background-color: black;
@@ -56,14 +64,6 @@ header nav ul li a {
     list-style-type: none;
 }
 
-.hamburger-menu-icon {
-    color: white;
-}
-
-.top-navbar {
-    display: hidden;
-}
-
 .logo {
     height: 60px;
     max-width: 100%;
@@ -85,6 +85,7 @@ header nav ul li a {
     background: black;
     color: white;
     font-size: 1.3rem;
+    margin: 1rem;
 }
 
 .breadcrumb-trail {
@@ -129,11 +130,12 @@ article {
     width: 40%;
 }
 
-.shop-button {
+.shop-button, .shop-button-container {
     border: 0.4em black solid;
     background: black;
     color: white;
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 h3 {
@@ -218,8 +220,18 @@ h4 {
     justify-content: center;
 }
 
+.size-chart-container {
+    margin-bottom: 1rem;
+}
+
 .eldritch-482-product-img {
     width: 60%;
+}
+
+.h1-shopnow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Contact Us Page */
@@ -236,6 +248,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    margin-bottom: 1rem;
 }
 
 .form-container {
@@ -245,6 +258,7 @@ form {
     gap: 1rem;
     background-color: black;
     padding: 20%;
+    margin-top: 1rem;
 }
 
 #submit {
@@ -261,6 +275,10 @@ label {
 
 .red {
     color: red;
+}
+
+.contact-us-h2 {
+    margin-top: 2rem;
 }
 
 
@@ -327,6 +345,21 @@ label {
         justify-content: space-between;
     }
 
+    picture {
+        width: 50%;
+    }
+
+    .landing {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .h1-shopnow {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20%;
+    }
 }
 
 /* Media Queries for Tiny Adjustments */
@@ -339,3 +372,38 @@ label {
     }
     
     }
+
+/* Notater:
+
+            Jeg har brukt <button> taggen her og der.
+            Jeg er klar over at disse ikke linker noe sted.
+            Hvis de skulle linke noe sted så hadde jeg brukt <a> isteden, og bare styla de på samme måte.
+            Jeg har brukt <a> taggen der det finnes noe relevant å linke til.
+
+            Jeg valgte å ikke dulle rundt med ikoner.
+            Om jeg skulle gjort det hadde jeg linka til et stylesheet fra
+            Font Awesome, inkludert ikonet i HTML'en på alle tre sidene med en <i>
+            tag, lagd two containere (en til ikonet og en til top-nav menyen),
+            lagt inn Javascript, linka containerne til Javascripten, brukt 
+            display: none; for å gjøre top-nav unsynlig, og latt 
+            Javascripten ta hånd om at top nav blir synlig igjen
+            når man trykker på ikonet. 
+
+   Kilder:
+
+            https://www.openai.com
+            https://www.youtube.com/watch?v=u044iM9xsWU&ab_channel=KevinPowell
+            https://www.youtube.com/watch?v=3elGSZSWTbM&ab_channel=KevinPowell
+            https://www.youtube.com/watch?v=8QSqwbSztnA&ab_channel=KevinPowell
+            https://www.youtube.com/watch?v=phWxA89Dy94&t=46s&ab_channel=SlayingTheDragon
+            https://www.youtube.com/watch?v=EiNiSFIPIQE&t=157s&ab_channel=SlayingTheDragon
+
+            Jeg har ikke kopiert noe kode eller følgt noen step-by-step tutorial
+            fra noen av disse, men har sett gjennom dem mens jeg har produsert nettstedet
+            for å få en bedre forståelse for hva jeg holder på med.
+
+*/
+
+
+
+
