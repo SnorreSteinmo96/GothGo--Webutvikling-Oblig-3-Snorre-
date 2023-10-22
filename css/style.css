@@ -277,4 +277,16 @@ form {
         display: flex;
         justify-content: center;
     }
+
+    footer nav ul {
+        display: flex;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10%;
+        max-width: 100%;
+    }
 }
