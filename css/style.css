@@ -218,6 +218,9 @@ h4 {
     justify-content: center;
 }
 
+.eldritch-482-product-img {
+    width: 60%;
+}
 
 /* Contact Us Page */
 
@@ -250,6 +253,14 @@ form {
     color: white;
     font-size: 1.3rem;
     margin-top: 1.6rem;
+}
+
+label {
+    color: white;
+}
+
+.red {
+    color: red;
 }
 
 
@@ -300,8 +311,8 @@ form {
         max-width: 100%;
     }
 
-    .eldritch-482-img {
-        width: 15%;
+    .eldritch-482-product-img {
+        width: 70%;
     }
 
     .img-product-options {
@@ -316,5 +327,15 @@ form {
         justify-content: space-between;
     }
 
-
 }
+
+/* Media Queries for Tiny Adjustments */
+
+@media screen and (max-width: 700px) {
+
+    .main-product-img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    }

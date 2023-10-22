@@ -25,8 +25,10 @@
                 <form method="post" action="#">
                     <h2>Contact Us</h2>
                     <div class="form-container">
-                      <input id="email" type="email" name="email" placeholder="Email..." required>
-                      <textarea id="typehere" name="typehere" rows="12" cols="30" placeholder="Type here..." required></textarea>
+                        <label for="email">Email<span class="red">*</span></label>
+                        <input id="email" type="email" name="email" placeholder="Email..." required>
+                        <label for="typehere">Inquiry<span class="red">*</span></label>
+                        <textarea id="typehere" name="typehere" rows="12" cols="30" placeholder="Type here..." required></textarea>
                     </div>
                     <input id="submit" type="submit" value="SUBMIT">
                     <p>Both fields are required!</p>
