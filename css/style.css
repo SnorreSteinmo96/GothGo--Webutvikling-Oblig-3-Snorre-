@@ -201,6 +201,10 @@ h4 {
     font-size: 1.4rem;
 }
 
+.details-text {
+    width: 95%;
+}
+
 .size-chart-button {
     border: 0.4em black solid;
     background: black;
@@ -208,6 +212,12 @@ h4 {
     font-size: 1rem;
     margin-top: 1rem;
 }
+
+.size-chart-container, .other-items {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Contact Us Page */
 
@@ -273,7 +283,7 @@ form {
         width: 30%;
     }
 
-    .shaker-flex-container, .eldritch-flex-container {
+    .shaker-flex-container, .eldritch-flex-container, .bestseller-product-container {
         display: flex;
         justify-content: center;
     }
@@ -289,4 +299,22 @@ form {
         gap: 10%;
         max-width: 100%;
     }
+
+    .eldritch-482-img {
+        width: 15%;
+    }
+
+    .img-product-options {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .product-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
 }
